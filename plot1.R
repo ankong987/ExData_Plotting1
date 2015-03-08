@@ -7,7 +7,7 @@ power <- read.table("household_power_consumption.txt", sep=";", header = TRUE,
 power$Date <- as.Date(power$Date, format="%d/%m/%Y")
 power <- power[power$Date >= as.Date("2007-02-01") & power$Date <= as.Date("2007-02-02"),]
 
-#creating first plot with height requested
+#creating first plot with height requested 
 png("plot1.png", width = 480, height = 480)
 par(mar=c(5, 5,1,1))
 
