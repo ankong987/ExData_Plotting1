@@ -1,4 +1,4 @@
- #reading in tables and creating two character classes and seven numeric classes based on what is described
+#reading in tables and creating two character classes and seven numeric classes based on what is described
 power <- read.table("household_power_consumption.txt", sep=";", header = TRUE, 
                     colClasses = c(rep("character", 2), 
                                    rep("numeric", 7)), na.strings = "?")
