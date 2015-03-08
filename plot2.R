@@ -11,7 +11,7 @@ power <- power[power$Date >= as.Date("2007-02-01") & power$Date <= as.Date("2007
 power$Date <- as.POSIXlt(paste(as.Date(power$Date,format="%d/%m/%Y" ), power$Time, sep = " "))
 
 
-#creating first plot with height requested 
+#creating first plot with height requested
 png("plot2.png", width = 480, height = 480)
 par(mar=c(5, 5,1,1))
 #creating a line plot diagram
